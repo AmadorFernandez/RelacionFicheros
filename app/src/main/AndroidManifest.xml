@@ -40,11 +40,13 @@
         <activity
             android:name=".EjFive"
             android:screenOrientation="portrait" />
-        <activity android:name=".EjSix"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EjExtra"
-            android:screenOrientation="portrait"
-            ></activity>
+        <activity
+            android:name=".EjSix"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EjExtra"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EjSeven"></activity>
     </application>
 
 </manifest>

@@ -67,6 +67,14 @@ public class SelectionActivity extends AppCompatActivity {
                 startActivity(new Intent(SelectionActivity.this, EjSix.class));
             }
         });
+        btn7 = (Button)findViewById(R.id.btn7);
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(SelectionActivity.this, EjSeven.class));
+            }
+        });
 
         btn8 = (Button)findViewById(R.id.btn8);
         btn8.setOnClickListener(new View.OnClickListener() {
