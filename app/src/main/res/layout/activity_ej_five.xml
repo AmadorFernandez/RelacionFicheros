@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ej_five"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amador.relacionficheros.EjFive">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:id="@+id/tilUrlEj5"
+        >
+
+        <EditText
+            android:hint="@string/text_path_to_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUrlEjFive"
+            android:inputType="textUri"
+            android:text="http://accesodatosdam.esy.es/enlaces.txt"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDowload"
+        android:text="@string/text_dowload"
+        android:layout_below="@+id/tilUrlEj5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvTotalPhoto"
+        android:layout_toRightOf="@+id/btnDowload"
+        android:layout_alignBottom="@+id/btnDowload"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imv_ej_five"
+        android:layout_below="@+id/btnDowload"
+        android:id="@+id/imvEjFive"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anterior"
+        android:layout_below="@+id/imvEjFive"
+        android:id="@+id/btnAtras"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@+id/imvEjFive"
+        android:id="@+id/btnAdelante"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btnAtras"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/txvPos"
+        />
+
+</RelativeLayout>

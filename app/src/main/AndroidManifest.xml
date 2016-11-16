@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amador.relacionficheros">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".EJOne" />
+        <activity android:name=".SaveFriendActivity" />
+        <activity
+            android:name=".EJTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EjTree"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EjFour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EjFive"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EjSix"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EjExtra"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
